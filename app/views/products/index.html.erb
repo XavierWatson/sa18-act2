@@ -1,0 +1,16 @@
+<table style='border:1px #666;background-color: #D6EEEE;'>
+<thead style='border:1px #666;background-color: #666;'>
+    <tr>
+        <td>Product</td>
+        <td></td>
+    </tr>
+</thead>
+<% @products.each do |product|%>
+<tbody>
+    <tr style='background-color: chocolate;'>
+        <td style='border:1px;'><%=product.name%></td>
+        <td style='background-color: green;'><%=link_to 'Show', show_path(product.id) %></td>
+    </tr>
+</tbody>
+<%end%>
+</table>
